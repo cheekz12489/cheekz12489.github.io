@@ -1,0 +1,144 @@
+* {
+  background-color: Lavender;
+}
+
+nav {
+  text-align: center;
+  background-color: Thistle;
+  width: 100%;
+  height: 60px;
+}
+
+nav a {
+  background-color: Thistle;
+  color: Black;
+  text-decoration: none;
+}
+
+nav span {
+  background-color: Thistle;
+  border: 2px solid SlateBlue;
+  padding: 3px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: SlateBlue;
+  text-align: center;
+}
+
+table {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+th {
+  background-color: MediumPurple;
+  color: White;
+}
+
+td {
+  padding: 5px;
+}
+
+table, td {
+  border: 2px solid MediumSlateBlue;
+  border-collapse: collapse;
+}
+
+tr td:first-child span,
+  #colors tr td:nth-child(2) span {
+  background-color: Plum;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 15px;
+}
+
+#tags tr th:first-child {
+  width: 150px;
+}
+
+#tags tr th:nth-child(2) {
+  width: 120px;
+}
+
+#attributes tr th:nth-child(2) {
+  width: 120px;
+}
+
+#attributes tr th:nth-child(3) {
+  width: 300px;
+}
+
+#properties tr th:first-child {
+  width: 120px;
+}
+
+#properties tr th:nth-child(2) {
+  width: 120px;
+}
+
+li {
+  margin: 3px auto;
+}
+
+#aqua {
+  background-color: Aqua;
+}
+
+#aquamarine {
+  background-color: Aquamarine;
+}
+
+#arial {
+  font-family: "Arial";
+} 
+
+#tnr {
+  font-family: "Times New Roman";
+}
+
+#tahoma {
+  font-family: "Tahoma";
+}
+
+#garamond {
+  font-family: "Garamond";
+}
+
+#courier {
+  font-family: "Courier New";
+}
+
+#serif {
+  font-family: serif;
+}
+
+#verdana {
+  font-family: "Verdana";
+}
+
+#trebuchet {
+  font-family: "Trebuchet MS";
+}
+
+#georgia {
+  font-family: "Georgia";
+}
+
+#brush {
+  font-family: "Brush Script MT";
+}
+
+#fonts tr td:first-child {
+  width: 150px;
+}
+
+#fonts tr td:nth-child(2) {
+  width: 500px;
+}

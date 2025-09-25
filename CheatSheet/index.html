@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='styles.css' rel='stylesheet' type='css/style'>
+    <link href='./Resources/CSS/styles.css' rel='stylesheet' type='text/css'>
     <title>HTML &amp; CSS Cheat Sheet</title>
   </head>
   
   <body>
     <header>
+      <nav>
+        <br>
+        <a href='#languages'><span>Languages</span></a>
+        <a href='#tags'><span>Tags</span></a>
+        <a href='#attributes'><span>Attributes</span></a>
+        <a href='#properties'><span>Properties</span></a>
+        <a href='#colors'><span>Colors</span></a>
+        <a href='#fonts'><span>Fonts</span></a>
+        <br>
+      </nav>
       <h1>HTML &amp; CSS Reference</h1>
     </header>
 
     <main>
-      <section class='topic'>
-        <h2 id='languages'>Languages for Web Development</h2>
+      <section id='languages'>
+        <br>
+        <h2 class='table-title'>Languages For Web Development</h2>
         <table class='table'>
-          <tr>
-            <th>Language Name</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>Hypertext Markup Language - Structures web content</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Cascading Style Sheets - Applies styling to web content</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Adds interactivity to web content</td>
-          </tr>
-          <tr>
-            <td>SQL</td>
-            <td>Structured Query Language - Allows storing &amp; retrieval of data</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>HTML</span></td>
+              <td>Hypertext Markup Language - Structures web content</td>
+            </tr>
+            <tr>
+              <td><span>CSS</span></td>
+              <td>Cascading Style Sheets - Applies styling to web content</td>
+            </tr>
+            <tr>
+              <td><span>JavaScript</span></td>
+              <td>Adds interactivity to web content</td>
+            </tr>
+            <tr>
+              <td><span>SQL</span></td>
+              <td>Structured Query Language - Allows storing &amp; retrieval of data</td>
+            </tr>
+          </tbody>
         </table>
+        <br>
       </section>
 
-      <section class='topic'>
-        <h2 id='tags'>HTML Tags</h2>
+      <section id='tags'>
+        <br>
+        <h2 class='table-title'>HTML Tags</h2>
         <table class='table'>
           <tr>
             <th>Tag</th>
@@ -46,141 +63,791 @@
             <th>Description</th>
           </tr>
           <tr>
-            <td>&lt;!DOCTYPE html&gt;</td>
+            <td><span>&lt;!DOCTYPE html&gt;</span></td>
             <td>Document Type</td>
             <td>Self-Closing tag to indicate what version of html will be used.</td>
           </tr>
           <tr>
-            <td>&lt;html&gt;</td>
+            <td><span>&lt;!--- TEXT ---&gt;</span></td>
+            <td>Comment</td>
+            <td>Self-Closing tag used to insert comments into HTML file - No visual effect on page.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;html&gt;</span></td>
             <td>HTML</td>
             <td>Container to indicate content that will be interpreted as HTML.</td>
           </tr>
           <tr>
-            <td>&lt;head&gt;</td>
+            <td><span>&lt;head&gt;</span></td>
             <td>Head</td>
             <td>Wrapper element for metadata of the web page - Content will not be displayed.</td>
           </tr>
           <tr>
-            <td>&lt;title&gt;</td>
+            <td><span>&lt;style&gt;</span></td>
+            <td>Style</td>
+            <td>Container used to allow CSS rulesets to be placed with HTML documnet itself.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;title&gt;</span></td>
             <td>Title</td>
             <td>Wrapper element for Title of the webpage - Displayed in tab of browser.</td>
           </tr>
           <tr>
-            <td>&lt;body&gt;</td>
+            <td><span>&lt;meta&gt;</span></td>
+            <td>Metadata</td>
+            <td>Container used to provide information about the webpage placed inside the Head Section - Often used to indicate the page discription, character set, author, or viewpoint settings.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;body&gt;</span></td>
             <td>Body</td>
             <td>Wrapper element for content that will be displayed to the screen</td>
           </tr>
           <tr>
-            <td>&lt;div&gt;</td>
+            <td><span>&lt;div&gt;</span></td>
             <td>Division</td>
             <td>Divides page into sections - No visual effects.</td>
           </tr>
           <tr>
-            <td>&lt;h1&gt;</td>
+            <td><span>&lt;h1&gt;</span></td>
             <td>Heading 1</td>
             <td>Largest heading.</td>
           </tr>
           <tr>
-            <td>&lt;h2&gt;</td>
+            <td><span>&lt;h2&gt;</span></td>
             <td>Heading 2</td>
             <td>Second largest heading.</td>
           </tr>
           <tr>
-            <td>&lt;h3&gt;</td>
+            <td><span>&lt;h3&gt;</span></td>
             <td>Heading 3</td>
             <td>Third largest heading.</td>
           </tr>
           <tr>
-            <td>&lt;h4&gt;</td>
+            <td><span>&lt;h4&gt;</span></td>
             <td>Heading 4</td>
             <td>Third smallest heading.</td>
           </tr>
           <tr>
-            <td>&lt;h5&gt;</td>
+            <td><span>&lt;h5&gt;</span></td>
             <td>Heading 5</td>
             <td>Second smallest heading.</td>
           </tr>
           <tr>
-            <td>&lt;h6&gt;</td>
+            <td><span>&lt;h6&gt;</span></td>
             <td>Heading 6</td>
             <td>Smallest heading.</td>
           </tr>
           <tr>
-            <td>&lt;p&gt;</td>
+            <td><span>&lt;p&gt;</span></td>
             <td>Paragraph</td>
             <td>Content within tags will be formatted like a paragraph.</td>
           </tr>
           <tr>
-            <td>&lt;span&gt;</td>
+            <td><span>&lt;span&gt;</span></td>
             <td>Span</td>
             <td>Inline container to group small pieces of text or other elements - No visual change.</td>
           </tr>
           <tr>
-            <td>&lt;em&gt;</td>
+            <td><span>&lt;em&gt;</span></td>
             <td>Emphasis</td>
             <td>Inline container to italicize text.</td>
           </tr>
           <tr>
-            <td>&lt;strong&gt;</td>
+            <td><span>&lt;strong&gt;</span></td>
             <td>Highlight</td>
             <td>Inline container to make text bold.</td>
           </tr>
           <tr>
-            <td>&lt;br&gt;</td>
+            <td><span>&lt;br&gt;</span></td>
             <td>Break</td>
             <td>Self-Closing tag to insert a line break within the browser.</td>
           </tr>
           <tr>
-            <td>&lt;ul&gt;</td>
+            <td><span>&lt;hr&gt;</span></td>
+            <td>Horizontal Line</td>
+            <td>Self-Closing tag to insert a horizontal line in the webpage.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;ul&gt;</span></td>
             <td>Unordered List</td>
             <td>Container for bulleted list items.</td>
           </tr>
           <tr>
-            <td>&lt;ol&gt;</td>
+            <td><span>&lt;ol&gt;</span></td>
             <td>Ordered List</td>
             <td>Container for numbered list items.</td>
           </tr>
           <tr>
-            <td>&lt;li&gt;</td>
+            <td><span>&lt;li&gt;</span></td>
             <td>List Items</td>
             <td>Container for items placed within an ordered or unordered list.</td>
           </tr>
           <tr>
-            <td>&lt;img&gt;</td>
+            <td><span>&lt;img&gt;</span></td>
             <td>Image</td>
             <td>Self-closing tag to display an image in the browser.</td>
           </tr>
           <tr>
-            <td>&lt;video&gt;</td>
-            <td>Video</td>
-            <td>Container to display a video - Text within tag only displayed if video cannot be loaded.</td>
-          </tr>
-          <tr>
-            <td>&lt;a&gt;</td>
+            <td><span>&lt;a&gt;</span></td>
             <td>Anchor</td>
             <td>Container allowing text within to link to another document or element on the page.</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><span>&lt;table&gt;</span></td>
+            <td>Table</td>
+            <td>Wrapper element for HTML tables.</td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><span>&lt;tr&gt;</span></td>
+            <td>Table Row</td>
+            <td>Conyainer to insert a row into a table.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;td&gt;</span></td>
+            <td>Table Data</td>
+            <td>Container to add cell content to a table row.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;th&gt;</span></td>
+            <td>Table Header</td>
+            <td>Container to add table headers to a column within a row.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;tbody&gt;</span></td>
+            <td>Table Body</td>
+            <td>Container to help section off large tables - Includes everything except the headings.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;thead&gt;</span></td>
+            <td>Table Head</td>
+            <td>Container to section off rows containing column headers in a table.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;tfoot&gt;</span></td>
+            <td>Table Foot</td>
+            <td>Container to section off the foot of a table - Usually contains totals, results, or other summary data.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;header&gt;</span></td>
+            <td>Header</td>
+            <td>Semantic container used for intrudcutory information - Often contains navigation links or headings.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;nav&gt;</span></td>
+            <td>Navigation</td>
+            <td>Semantic container often used for navigation links or table of contents.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;main&gt;</span></td>
+            <td>Main</td>
+            <td>Semantic container used to section off dominant content of a webpage.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;footer&gt;</span></td>
+            <td>Footer</td>
+            <td>Semantic container placed at the bottom of the mage - Often used for contact/copyright/terms of use/site map info or links to the top of the page.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;section&gt;</span></td>
+            <td>Section</td>
+            <td>Semantic container to group areas of a page with the same theme/topic - Often used for things like chapters or headings.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;article&gt;</span></td>
+            <td>Article</td>
+            <td>Semantic container used for conten that makes sense on its own - Often used for things like blogs, articles, commnets, or magazines.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;aside&gt;</span></td>
+            <td>Aside</td>
+            <td>Semantic container used to include additional info that enhances another element, but that is not required - Often used for things like bibliographies, comments, end notes, etc.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;figure&gt;</span></td>
+            <td>Figure</td>
+            <td>Semantic container used to encapsulate media referenced by the main content - Often used for things like images, illustrations, diagrams, or code snippets.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;figcaption&gt;</span></td>
+            <td>Figure Caption</td>
+            <td>Semantic container used to describe the contents of the Figure Tag.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;video&gt;</span></td>
+            <td>Video</td>
+            <td>Container to display a video - Text within tag only displayed if video cannot be loaded.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;audio&gt;</span></td>
+            <td>Audio</td>
+            <td>Semantic container used to embed audio content into the webpage.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;source&gt;</span></td>
+            <td>Source</td>
+            <td>Semantic container used to identify the source of the audio element.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;track&gt;</span></td>
+            <td>Track</td>
+            <td>Self-Closing tag used inside the Audio or Video Tag to specify tracks, such as subtitles, captions, or descriptions about the media content.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;embed&gt;</span></td>
+            <td>Embed</td>
+            <td>Semantic container (Self-Closing Tag) used to embed any medio content to the webpage - Often used for video, audio, or gifs. **Deprecated**</td>
+          </tr>
+          <tr>
+            <td><span>&lt;canvas&gt;</span></td>
+            <td>Canvas</td>
+            <td>Container used to place a space on the page where you can draw graphics using JavaScript.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;svg&gt;</span></td>
+            <td>Scalable Vector Graphics</td>
+            <td>Container used to draw shapes, lines, and text using XML markup - SVG images scale without losing quality and are good for icons, charts, and illustrations.</td>
+          </tr>
+          <tr>
+            <td><span>&lt;script&gt;</span></td>
+            <td>Script</td>
+            <td>Container used to includ JavaScript code within an HTML documnet - Usually placed within the &lt;head&gt; Tag or at the end of the &lt;body&gt; Tag.</td>
           </tr>
         </table>
       </section>
 
-      <section class='topic'>
-        <h2 id='atrributes'>HTML Attributes</h2>
+      <section id='attributes'>
+        <br>
+        <h2 class='table-title'>HTML Attributes</h2>
         <table class='table'>
-
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Values</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>href</span></td>
+              <td>Hyperlink Reference</td>
+              <td>Identifies the destination location of the Hyperlink for &lt;a&gt; Tags.</td>
+              <td>Absolute/Relative Path or Jump to #UniqueID</td>
+            </tr>
+            <tr>
+              <td><span>rel</span></td>
+              <td>Relationship</td>
+              <td>Describes the relationship between the current document and the linked resource. </td>
+              <td>stylesheet, noopener, noreferrer, nofollow, alternate, icon, author</td>
+            </tr>
+            <tr>
+              <td><span>id</span></td>
+              <td>ID</td>
+              <td>Uniquely identifies an element by a user-defined name.</td>
+              <td>User Defined</td>
+            </tr>
+            <tr>
+              <td><span>class</span></td>
+              <td>Class</td>
+              <td>Assigns one or more user-defined names that can be used for styling multiple elements at once.</td>
+              <td>User defined</td>
+            </tr>
+            <tr>
+              <td><span>src</span></td>
+              <td>Source</td>
+              <td>Specifies the source file for images, audio, video, etc.</td>
+              <td>Absolute/Relative Path</td>
+            </tr>
+            <tr>
+              <td><span>alt</span></td>
+              <td>Alternative Text</td>
+              <td>Provides alternative text for images if image cannot load and for assistive screen readers.</td>
+              <td>User Defined</td>
+            </tr>
+            <tr>
+              <td><span>width</span></td>
+              <td>Width</td>
+              <td>Sets the size for images, video, or other elements that can be sized.</td>
+              <td>px, %, em, rem, vw, vh</td>
+            </tr>
+            <tr>
+              <td><span>height</span></td>
+              <td>Height</td>
+              <td>Sets the size for images, video, or other elements that can be sized.</td>
+              <td>px, %, em, rem, vw, vh</td>
+            </tr>
+            <tr>
+              <td><span>controls</span></td>
+              <td>Controls</td>
+              <td>Includes basic video or audio controls for embedded media.</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td><span>target</span></td>
+              <td>Target</td>
+              <td>Specifies where to open the linked document</td>
+              <td>_blank, _self, _parent, _top</td>
+            </tr>
+            <tr>
+              <td><span>colspan</span></td>
+              <td>Column Span</td>
+              <td>Defines how many columns a cell should span horizontally within a table row.</td>
+              <td>Integer Value</td>
+            </tr>
+            <tr>
+              <td><span>rowspan</span></td>
+              <td>Row Span</td>
+              <td>Defines how many rows a cell should span verically with a table column.</td>
+              <td>Integer Value</td>
+            </tr>
+            <tr>
+              <td><span>scope</span></td>
+              <td>Scope</td>
+              <td>Specifies what part of a table the table header refers to, such as a column or row.</td>
+              <td>col, row, colgroup, rowgroup</td>
+            </tr>
+            <tr>
+              <td><span>type</span></td>
+              <td>Type</td>
+              <td>Defines the type or format of an element, such as input, button, script, or link.</td>
+              <td>&lt;input&gt; - text, password, email, numnber, checkbox, radio, submit<br>&lt;button&gt; - button, submit, reset<br>&lt;script&gt; - text/javascript, module<br>&lt;link&gt; - text/css, image/png<br>&lt;ol&gt; - 1, A, a, I, i</td>
+            </tr>
+            <tr>
+              <td><span>autoplay</span></td>
+              <td>Auto Play</td>
+              <td>Used with audio and video tags to force media start playing as soon as the webpage is loaded.</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td><span>loop</span></td>
+              <td>Loop</td>
+              <td>Used with audio and video tags to force media to play again automatically once it has ended.</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td><span>title</span></td>
+              <td>Title</td>
+              <td>Adds extra information shown as a tooltip.</td>
+              <td>User Defined</td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
+      <section id='properties'>
+        <br>
+        <h2 class='table-title'>CSS Properties</h2>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>min-width</span></td>
+              <td>Minimum Width</td>
+              <td>Sets minimum width an element can be - Used to prevent content from shrinking too much when screen size gets too small.</td>
+              <td>px, %, em, rem, vw, vh</td>
+            </tr>
+            <tr>
+              <td><span>max-width</span></td>
+              <td>Maximum Width</td>
+              <td>Sets maximum width an element can be, even when screen size increases past this size.</td>
+              <td>px, %, em, rem, vw, vh</td>
+            </tr>
+            <tr>
+              <td><span>min-height</span></td>
+              <td>Minumum Height</td>
+              <td>Sets the minimum height an element can be, even when screen size decreases less than this size.</td>
+              <td>px, %, em, rem, vw, vh</td>
+            </tr>
+            <tr>
+              <td><span>max-height</span></td>
+              <td>Maximum Height</td>
+              <td>Sets the maximum height an element can be, even when screen size increases past this size.</td>
+              <td>px, %, em, rem, vw, vh</td>
+            </tr>
+          <tr>
+              <td><span>color</span></td>
+              <td>Text Color</td>
+              <td>Used to change the foreground color of a text element.</td>
+              <td>Named Colors, Hex Codes, rgb()/rgba(), hsl()/hsla()</td>
+            </tr>
+            <tr>
+              <td><span>background-color</span></td>
+              <td>Background Text Color</td>
+              <td>Used to change the background color of an element.</td>
+              <td>Named Colors, Hex Codes, rgb()/rgba(), hsl()/hsla()</td>
+            </tr>
+            <tr>
+              <td><span>font-family</span></td>
+              <td>Font Family</td>
+              <td>Chooses the font of the text within the element.</td>
+              <td>Font Names, Generic Families, Fallback Fonts, Free Hosted, Downloaded</td>
+            </tr>
+            <tr>
+              <td><span>font-weight</span></td>
+              <td>Font Weight</td>
+              <td>Sets how bold or light the text appears.</td>
+              <td>Numeric Value bt 100s, normal, bold, bolder, lighter</td>
+            </tr>
+            <tr>
+              <td><span>font-size</span></td>
+              <td>Font Size</td>
+              <td>Sets the size of the text within the element.</td>
+              <td>px, pt, cm, mm, in, %, em, rem, vw, vh, xx-small, x-small, small, medium large, x-large, xx-large, smaller, larger</td>
+            </tr>
+            <tr>
+              <td><span>text-align</span></td>
+              <td>Text Alignment</td>
+              <td>Sets the horizontal alighment of the text within the element.</td>
+              <td>left, right, center, justify</td>
+            </tr>
+            <tr>
+              <td><span>opacity</span></td>
+              <td>Opacity</td>
+              <td>Sets the transparency of an element.</td>
+              <td>Decimal between 0(Invisible) and 1(Fully Visible)</td>
+            </tr>
+            <tr>
+              <td><span>background-image</span></td>
+              <td>Background Image</td>
+              <td>Sets an image as the background of an element.</td>
+              <td>url(Absolute/Relative Path)</td>
+            </tr>
+            <tr>
+              <td><span>list-style</span></td>
+              <td>List Style</td>
+              <td>Sets the style of the list item markers, such as the bullets or the numbers.</td>
+              <td>disc, circle, square, decimal, lower-alpha, upper-alpha, none</td>
+            </tr>
+            <tr>
+              <td><span>padding</span></td>
+              <td>Element Padding</td>
+              <td>Sets the space between the content and the border of an element.</td>
+              <td>px, %, em, rem (1-4 Values)</td>
+            </tr>
+            <tr>
+              <td><span>padding-top</span></td>
+              <td>Top Padding</td>
+              <td>Sets the space between the top of the content and the border of an element</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>padding-right</span></td>
+              <td>Right Padding</td>
+              <td>Sets the space between the right side of the content and the border of an element.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>padding-bottom</span></td>
+              <td>Bottom Padding</td>
+              <td>Sets the space between the bottom of the content and the border of an element.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>padding-left</span></td>
+              <td>Left Padding</td>
+              <td>Sets the pace between the left side of the content and the border of an element.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>border-radius</span></td>
+              <td>Border Radius</td>
+              <td>Rounds the corners of an element's border.</td>
+              <td>px or % (1 to 4 Values)</td>
+            </tr>
+            <tr>
+              <td><span>cursor</span></td>
+              <td>Cursor</td>
+              <td>Changes the mouse pointer when hovering over an element.</td>
+              <td>pointer, default, text, move, not-allowed, wait</td>
+            </tr>
+            <tr>
+              <td><span>border</span></td>
+              <td>Border</td>
+              <td>Sets an element's border width, style, and color.</td>
+              <td>px, em (Width), solid, dashed, dotted, double, groove (Style), Any Color Variation</td>
+            </tr>
+            <tr>
+              <td><span>margin</span></td>
+              <td>Margin</td>
+              <td>Sets the space outside of the border between neighboring elements.</td>
+              <td>px, %, em, rem (1 to 4 Values)</td>
+            </tr>
+            <tr>
+              <td><span>margin-top</span></td>
+              <td>Top Margin</td>
+              <td>Sets the space outside of the top of an element's border and the element above it.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>margin-right</span></td>
+              <td>Right Margin</td>
+              <td>Sets the space outside of the right side of an element's border and the element to its right.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>margin-bottom</span></td>
+              <td>Bottom Margin</td>
+              <td>Sets the space outside of the bottom of an element's border and the element below it.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>margin-left</span></td>
+              <td>Left Margin</td>
+              <td>Sets the space outside of the left side of an element's border and the element to the left.</td>
+              <td>px, %, em, rem</td>
+            </tr>
+            <tr>
+              <td><span>overflow</span></td>
+              <td>Overflow</td>
+              <td>Controls what happens if content overflows an element's box.</td>
+              <td>visible, hidden, scroll, auto</td>
+            </tr>
+            <tr>
+              <td><span>overflow-x</span></td>
+              <td>X Overflow</td>
+              <td>Handles overflow on the left and right sides of an element.</td>
+              <td>visible, hidden, scroll, auto</td>
+            </tr>
+            <tr>
+              <td><span>overflow-y</span></td>
+              <td>Y Overflow</td>
+              <td>Handles overflow on the top and bottom of an element.</td>
+              <td>visible, hidden, scroll, auto</td>
+            </tr>
+            <tr>
+              <td><span>visibility</span></td>
+              <td>Visibility</td>
+              <td>Shows or hides and element without completely removing it from the webpage flow.</td>
+              <td>visible, hidden, collapse</td>
+            </tr>
+            <tr>
+              <td><span>display</span></td>
+              <td>Display</td>
+              <td>Sets how an element is displayed within the webpage.</td>
+              <td>block, inline, inline-block, none, flex, grid</td>
+            </tr>
+            <tr>
+              <td><span>box-sizing</span></td>
+              <td>Box Sizing</td>
+              <td>Controls how width and height are calculated when considering things like padding and margin.</td>
+              <td>content-box, border-box</td>
+            </tr>
+            <tr>
+              <td><span>position</span></td>
+              <td>Position</td>
+              <td>Sets how an element is positioned in terms of the flow of other elements within the webpage.</td>
+              <td>static, relative, absolute, fixed, sticky</td>
+            </tr>
+            <tr>
+              <td><span>z-index</span></td>
+              <td>Z Index</td>
+              <td>Sets the stacking order of positioned elements - Determines the depth of an element.</td>
+              <td>Any integer, negative elements can be behind others, auto follows HTML order</td>
+            </tr>
+            <tr>
+              <td><span>float</span></td>
+              <td>Float</td>
+              <td>Moves an element to the left or right, allowing text and inline elements to wrap around it.</td>
+              <td>left, right, none, inherit</td>
+            </tr>
+            <tr>
+              <td><span>clear</span></td>
+              <td>Clear</td>
+              <td>Controls the behavior of floating elements that bump into each other.</td>
+              <td>left, right, both, none, inherit</td>
+            </tr>
+            <tr>
+              <td><span>font-style</span></td>
+              <td>Font Style</td>
+              <td>Sets the style of the font.</td>
+              <td>normal, italic, oblique, inherit</td>
+            </tr>
+            <tr>
+              <td><span>text-transform</span></td>
+              <td>Text Transform</td>
+              <td>Changes the case of the text within the element.</td>
+              <td>none, uppercase, lowercase, capitalize, inherit</td>
+            </tr>
+            <tr>
+              <td><span>letter-spacing</span></td>
+              <td>Letter Spacing</td>
+              <td>Sets the space between letters within the element.</td>
+              <td>px, em, rem, normal</td>
+            </tr>
+            <tr>
+              <td><span>word-spacing</span></td>
+              <td>Word Spacing</td>
+              <td>Sets the space between words within the element.</td>
+              <td>px, em, rem, normal</td>
+            </tr>
+            <tr>
+              <td><span>line-height</span></td>
+              <td>Line Height</td>
+              <td>Sets the vertical space between lines of text.</td>
+              <td>px, %, em, rem, normal</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
+      <section id='colors'>
+        <br>
+        <h2 class='table-title'>Color Options</h2>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>Name</th>
+              <th>Hex</th>
+              <th>RGB</th>
+              <th>HSL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id='aqua'></td>
+              <td><span>Aqua</span></td>
+              <td>#00FFFF</td>
+              <td>0, 255, 255</td>
+              <td>180, 100%, 50%</td>
+            </tr>
+            <tr>
+              <td id='aquamarine'></td>
+              <td><span>Aquamarine</span></td>
+              <td>#7FFFD4</td>
+              <td>127, 255, 212</td>
+              <td>160, 83%, 67%</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </section>
+
+      <section id='fonts'>
+        <br>
+        <h2 class='table-title'>Font Families</h2>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Font Name</th>
+              <th>Example Text</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>Arial</span></td>
+              <td id='arial'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Times New Roman</span></td>
+              <td id='tnr'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Tahoma</span></td>
+              <td id='tahoma'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Verdana</span></td>
+              <td id='verdana'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Garamond</span></td>
+              <td id='garamond'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Trebuchet MS</span></td>
+              <td id='trebuchet'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Georgia</span></td>
+              <td id='georgia'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Brush Script MT</span></td>
+              <td id='brush'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Courier New</span></td>
+              <td id='courier'>The quick brown fox jumped over the fence...</td>
+            </tr>
+            <tr>
+              <td><span>Serif</span></td>
+              <td id='serif'>The quick brown fox jumped over the fence...</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </section>
     </main>
 
     <footer>
