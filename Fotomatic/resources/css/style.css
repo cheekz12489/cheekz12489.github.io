@@ -8,6 +8,7 @@ html {
 .main-content {
   position: relative;
   top: 5.375rem; /* To offset for fixed header. */
+
 }
 
 .center {
@@ -26,6 +27,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -227,7 +229,7 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
 }
 
@@ -238,14 +240,17 @@ header .mobile {
   background-color: white;
 }
 
-.feature center {
-  width: 90%;
-  height: 65%;
-}
 
+.feature .image-container {
+  height: 65%;
+  width: 90%;
+  margin: 0 auto;
+}
 
 .feature .content {
   padding: 2.5rem 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .feature h2 {
@@ -315,6 +320,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -353,11 +359,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -404,7 +410,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
