@@ -1,0 +1,22 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Working Directory for Codecademy projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheekz12489/cheekz12489.github.io.git"
+  },
+  "author": "Kelly Rogers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheekz12489/cheekz12489.github.io/issues"
+  },
+  "homepage": "https://github.com/cheekz12489/cheekz12489.github.io#readme",
+  "devDependencies": {
+    "mocha": "^11.7.4"
+  }
+}
